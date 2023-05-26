@@ -1,0 +1,208 @@
+/* Global Styles */
+body {
+  font-family: "Lato", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2d3142;
+  color: white;
+}
+
+/* CSS for navbar */
+nav {
+  background-color: #f5f5f5;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #000;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4f5d75;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* CSS for mission section */
+.mission-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.mission-content {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 601px) {
+  .section-container:not(:first-child) {
+    margin-top: 20px;
+  }
+
+  .section-container:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mission-section {
+    flex-basis: 50%; /* On larger screens, set the section width to 50% */
+    max-width: 600px; /* Set a maximum width for the mission section */
+    margin: 0 auto; /* Center align the section */
+  }
+}
+
+p,
+ul,
+ol {
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Flexbox for image gallery */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: -5px;
+  margin-bottom: 40px;
+}
+
+.image-gallery img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: none;
+}
+
+@media screen and (max-width: 600px) {
+  .image-gallery img {
+    flex-basis: 50%;
+    max-width: calc(50% - 10px);
+  }
+}
+
+.rating {
+  color: #ffd700;
+  font-size: 20px;
+  display: inline-block;
+}
+
+/* CSS for Skills list */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  columns: 2;
+  column-gap: 0px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.skills-list h3 {
+  text-align: center;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+}
+
+/* CSS for Interests list */
+.interests-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.interests-list li {
+  margin-bottom: 10px;
+}
+
+/* projects.html CSS */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #bfc0c0;
+}
+
+thead th {
+  background-color: #2d3142;
+  color: #fff;
+}
+
+tbody td:nth-child(3) {
+  font-weight: bold;
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #f5f5f5;
+  color: #000;
+  padding: 10px;
+  text-align: center;
+}
